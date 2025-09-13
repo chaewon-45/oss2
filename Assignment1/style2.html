@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment1_style2</title>
+</head>
+
+<style>
+    .div_navtop h2{
+        color: rgb(2, 162, 2);
+        font-weight:800;
+        font-size:xx-large;
+        margin: 10px 10px 0px 10px;
+
+    }
+    .div_navtop_content{
+        margin: 0px 10px 10px 15px;
+    }
+    .div_navleft{
+        padding: 10px 5px 15px 5px;
+        color: white;
+        margin: 10px;
+        height: 10px;
+        width: 150px;
+        margin: 5px;
+        text-align:center;
+        font-weight:400;
+    }
+    .div_leftcontent{
+        display: flex;
+    }
+    .div_navleft.normal{
+        background-color:rgb(78, 78, 78);
+    }
+    .div_navleft.active{
+        background-color:rgb(0, 175, 20);
+    }
+    .div_centercontent{
+        margin: 10px;
+    }
+    .div_centercontent h1{
+        color: rgb(2, 162, 2);
+        font-weight:800;
+        font-size:xx-large;
+    }
+    .div_centercontent h2{
+        color: rgb(2, 162, 2);
+        font-weight:800;
+        font-size:x-large;
+    }
+    .div_rightcontent{
+        background-color: rgb(240, 240, 240);
+        border: 1px solid rgb(183, 183, 183);
+        margin: 5px;
+    }
+    .div_rightcontent h3{
+        color: rgb(2, 162, 2);
+        padding: 1px 10px 0px 10px;
+        font-weight:1000;
+    }
+    .div_footer{
+        text-align:center;
+        font-size: x-small;
+    }
+</style>
+
+<body>
+    <!--nav top 공간-->
+    <div class="div_navtop">
+        <h2>Welcome to 손채원's Homepage</h2>
+
+        <div class="div_navtop_content">Use the menu to select different Stylesheets</div>
+    </div>
+
+    <div class="div_maincontent">
+        <div class="div_leftcontent">
+            <div class="div_navleft normal">Stylesheet 1</div>
+            <div class="div_navleft active">Stylesheet 2</div>
+            <div class="div_navleft normal">Stylesheet 3</div>
+            <div class="div_navleft normal">Stylesheet 4</div>
+            <div class="div_navleft normal">No Stylesheet</div>
+        </div>
+
+        <div class="div_centercontent">
+            <h1>Same Page Different Stylesheets</h1>
+
+            <div style="margin: 10px">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</div>
+            <div>
+                <a href="./style1.html">Stylesheet1</a>,
+                <a href="./style2.html">Stylesheet2</a>,
+                <a href="./style3.html">Stylesheet3</a>,
+                <a href="./style4.html">Stylesheet4</a>.
+            </div>
+
+            <h2>No Styles</h2>
+
+            This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+            <div>
+                <a href="./index.html">No Stylesheet</a>.
+            </div>
+        </div>
+
+        <div class="div_rightcontent">
+            <h3>Side-Bar</h3>
+
+            <div style="padding: 0px 10px 10px 10px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+        </div>
+
+        <div class="div_footer">
+            <br />
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </div>
+</body>
+</html>
