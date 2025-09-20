@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: #f8f9fa;
+    }
+    .list-group{
+        background-color: #f8f9fa;
+        padding: 12px;
+        list-style: none;
+        margin: 0 0 16px 0;
+    }
+    .list-group-item{
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        background-color: #fff;
+    }
+    .text-success{
+        color: green;
+    }
+    .text-muted{
+        color: #6c757d;
+    }
+    .badge{
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 50%;
+        background: blue;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .input-group{
+        display: flex;
+        margin-top: 10px;
+    }
+    .input-group input{
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #6a6a6a;
+        outline: none;
+    }
+    .input-group button{
+        padding: 10px 20px;
+        border: none;
+        background: #6c757d;
+        color: white;
+        font-weight: bold;
+        border-radius: 0 6px 6px 0;
+    }
+    
+
+    input[type=text]{
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #6a6a6a;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    select{
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #6a6a6a;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=date]{
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #6a6a6a;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    textarea{
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #6a6a6a;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text primary" style=padding:20px>Your cart</span>
+            <span class="badge bg-primary rounded-pill">2</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">−$5</span>
+          </li>
+          
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$15</strong>
+          </li>
+        </ul>
+        <form class="card p-2">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+        </form>
+    </div>
+    <br />
+
+    <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3" style="font-size: x-large;">Billing address</h4>
+        <form class="needs-validation" novalidate>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder value required>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required>
+                    <option value>Choose...</option>
+                    <optgroup label="Seoul">
+                      <option value="1">Seocho</option>
+                      <option value="2">Gangnam</option>
+                      <option value="3">Yongsan</option>
+                    </optgroup>
+                    <optgroup label="Gyeongbuk">
+                      <option value="1">Pohang</option>
+                      <option value="2">Gyeongju</option>
+                    </optgroup>
+                    
+                  </select>
+                </div>
+
+                <label for="date" class="form-label">Date</label>
+                <input type="date" min="2025-09-19" max="2025-12-31" name="date">
+                <br />
+                
+                <div>
+                  <label for="textarea">Request</label>
+                  <br />
+                  <textarea id="textarea" cols="30" rows="5" placeholder="원하시는 요청사항을 입력해주세요."></textarea>
+                </div>
+                <br />
+
+                <label for="pay" style="font-weight: bold;">Payment </label><br />
+                <input type="radio" id="pay1" name="pay" value="Card" checked>Card<br />
+                <input type="radio" id="pay2" name="pay" value="Cash">Cash<br><br />
+
+                
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info" style="font-weight: 600;">Save this information for next time</label>
+                </div>
+            </div>
+
+            <br />
+            <button type="submit"
+             style="width: 100% ; padding:15px; background-color: #007bff; color: white; border: none; border-radius: 12px; font-size: 18px; font-weight: bold; cursor: pointer">
+              Continue to checkout
+            </button>
+        </form>
+    </div>
+    
+</body>
+</html>
